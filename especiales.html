@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Especiales | Tu Cine</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    /* Estilos generales */
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      color: #fff;
+      background: url('fon1.jpg') no-repeat center center fixed;
+      background-size: cover;
+    }
+
+    /* Encabezado */
+    header {
+      background-color: rgba(0, 0, 0, 0.8);
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 3rem;
+      color: #ffcc00;
+      text-shadow: 2px 2px #000;
+    }
+
+    /* Navegación */
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 10px 0 0 0;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    nav ul li {
+      margin: 0 15px;
+    }
+
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 1.1rem;
+      padding: 8px 12px;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+
+    nav ul li a:hover {
+      background-color: #ffcc00;
+      color: #000;
+    }
+
+    /* Contenido principal */
+    main {
+      background-color: rgba(0, 0, 0, 0.7);
+      margin: 30px auto;
+      padding: 20px;
+      max-width: 800px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px #000;
+    }
+
+    .productos-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+      margin-bottom: 30px;
+    }
+
+    .producto {
+      background: #fff;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      width: 180px;
+      text-align: center;
+      padding: 10px;
+      box-shadow: 0 2px 5px rgb(204 0 0 / 0.2);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      color: #000;
+    }
+
+    .producto img {
+      max-width: 100%;
+      border-radius: 6px;
+      height: 130px;
+      object-fit: cover;
+      margin-bottom: 10px;
+    }
+
+    .producto-name {
+      font-weight: bold;
+      margin-bottom: 6px;
+      font-size: 1rem;
+      min-height: 40px;
+    }
+
+    .producto-precio {
+      color: #cc0000;
+      font-weight: bold;
+      margin-bottom: 8px;
+    }
+
+    .cantidad-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 5px;
+      margin-bottom: 10px;
+    }
+
+    .cantidad-container label {
+      font-weight: 600;
+    }
+
+    .cantidad-container input {
+      width: 40px;
+      padding: 5px;
+      text-align: center;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    #total-container {
+      font-size: 1.3rem;
+      font-weight: bold;
+      text-align: center;
+      margin-bottom: 20px;
+      color: #cc0000;
+    }
+
+    #btn-pagar {
+      display: block;
+      margin: 0 auto 30px auto;
+      background-color: #cc0000;
+      color: white;
+      border: none;
+      padding: 12px 25px;
+      font-size: 1.2rem;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    #btn-pagar:hover {
+      background-color: #a60000;
+    }
+
+    #form-pago {
+      max-width: 400px;
+      margin: 0 auto 40px auto;
+      padding: 20px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      background: #fff;
+      display: none;
+      flex-direction: column;
+      gap: 15px;
+      color: #000;
+    }
+
+    #form-pago label {
+      font-weight: 600;
+    }
+
+    #form-pago input {
+      padding: 8px;
+      font-size: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    #form-pago button {
+      background-color: #cc0000;
+      color: white;
+      font-weight: 700;
+      padding: 12px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 1rem;
+      transition: background-color 0.3s;
+    }
+
+    #form-pago button:hover {
+      background-color: #a60000;
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px 0;
+      color: #fff;
+      background-color: rgba(0,0,0,0.8);
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Especiales</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="cartelera.html">Cartelera</a></li>
+        <li><a href="promociones.html">Promociones</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+        <li><a href="sucursales.html">Sucursales</a></li>
+        <li><a href="horarios.html">Horarios</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Combos</h2>
+    <div class="productos-container" id="combos-container">
+      <!-- Combos se insertan aquí por JS -->
+    </div>
+
+    <h2>Alimentos</h2>
+    <div class="productos-container" id="alimentos-container">
+      <!-- Alimentos se insertan aquí por JS -->
+    </div>
+
+    <div id="total-container">Total a pagar: $0</div>
+    <button id="btn-pagar">Pagar con tarjeta</button>
+
+    <form id="form-pago">
+      <label for="nombre">Nombre en tarjeta:</label>
+      <input type="text" id="nombre" required />
+
+      <label for="numero">Número de tarjeta:</label>
+      <input type="text" id="numero" maxlength="16" pattern="\d{16}" placeholder="Ejemplo: 1234123412341234" required />
+
+      <label for="vencimiento">Fecha de vencimiento (MM/AA):</label>
+<input type="month" id="vencimiento" required />
+
+      <label for="cvv">CVV:</label>
+      <input type="text" id="cvv" maxlength="3" pattern="\d{3,4}" placeholder="Ejemplo: 123" required />
+
+      <button type="submit">Finalizar compra</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Tu Cine. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <script src="especiales.js"></script>
+</body>
+</html>

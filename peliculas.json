@@ -1,0 +1,65 @@
+[
+    {
+        "titulo": "La Mujer Rey",
+        "duracion": "2h 15min",
+        "descripcion": "Un relato histórico sobre las guerreras africanas que defendieron su reino con valor y honor.",
+        "horarios": ["16:00", "19:00", "21:30"],
+        "salas": ["Sala 1", "Sala 2"]
+    },
+    {
+        "titulo": "Top Gun: Maverick",
+        "duracion": "2h 10min",
+        "descripcion": "El legendario piloto vuelve para una misión que pondrá a prueba sus límites y lealtades.",
+        "horarios": ["15:30", "18:45", "22:00"],
+        "salas": ["Sala 3", "Sala 4"]
+    },
+    {
+        "titulo": "Avatar: El camino del agua",
+        "duracion": "3h 15min",
+        "descripcion": "Secuela épica de Avatar, explorando nuevos mundos y luchas por la supervivencia.",
+        "horarios": ["14:00", "18:00", "21:00"],
+        "salas": ["Sala 1", "Sala 5"]
+    },
+    {
+        "titulo": "Misión imposible: Sentencia mortal",
+        "duracion": "2h 30min",
+        "descripcion": "Ethan Hunt vuelve con nuevas misiones imposibles que solo él puede cumplir.",
+        "horarios": ["17:00", "20:00", "22:30"],
+        "salas": ["Sala 2", "Sala 4"]
+    },
+    {
+        "titulo": "Black Panther: Wakanda Forever",
+        "duracion": "2h 45min",
+        "descripcion": "Wakanda enfrenta nuevas amenazas mientras honra el legado del Rey T'Challa.",
+        "horarios": ["16:30", "19:30", "22:00"],
+        "salas": ["Sala 1", "Sala 3"]
+    },
+    {
+        "titulo": "John Wick 4",
+        "duracion": "2h 50min",
+        "descripcion": "John Wick regresa para enfrentarse a nuevos enemigos y sobrevivir una vez más.",
+        "horarios": ["15:00", "18:30", "21:45"],
+        "salas": ["Sala 2", "Sala 5"]
+    },
+    {
+        "titulo": "Doctor Strange: Multiverso de la Locura",
+        "duracion": "2h 06min",
+        "descripcion": "Doctor Strange abre las puertas del multiverso, enfrentando peligros inimaginables.",
+        "horarios": ["14:30", "18:00", "20:45"],
+        "salas": ["Sala 3", "Sala 4"]
+    },
+    {
+        "titulo": "Jurassic World: Dominion",
+        "duracion": "2h 26min",
+        "descripcion": "Humanos y dinosaurios deben coexistir mientras una nueva amenaza emerge.",
+        "horarios": ["13:00", "17:00", "20:00"],
+        "salas": ["Sala 1", "Sala 5"]
+    },
+    {
+        "titulo": "The Batman",
+        "duracion": "2h 56min",
+        "descripcion": "Bruce Wayne enfrenta a un sádico asesino mientras desvela la corrupción de Gotham.",
+        "horarios": ["16:00", "19:30", "22:45"],
+        "salas": ["Sala 2", "Sala 3"]
+    }
+]
